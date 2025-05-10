@@ -5,7 +5,7 @@ public class A3_hw13 {
     int num=32768;
     int temp=num;
     int count=0;    
-    while(temp!=0){
+    while(temp != 0){
       temp=temp/10;
       count++;
     }   
