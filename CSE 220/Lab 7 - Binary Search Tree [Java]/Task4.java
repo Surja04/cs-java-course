@@ -17,8 +17,7 @@ public class Task4 {
         if (left == null || right == null) {
             return 0;
         }
-        Integer sum = left.elem + right.elem;
-        return sum+ function(left.left,right.right)+function(left.right,right.left);
+        return left.elem+right.elem+ function(left.left,right.right)+function(left.right,right.left);
     }
     //===============================================================
 

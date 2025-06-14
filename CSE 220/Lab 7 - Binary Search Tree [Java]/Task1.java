@@ -9,11 +9,7 @@ public class Task1 {
                  if(root == null) {
                      return null;
                  }
-                 if(root.left.elem == x && root.right.elem == y || root.left.elem == y && root.right.elem == x)
-                 {
-                     return root.elem;
-                 }
-                 else if(x < root.elem && y < root.elem)
+                 if(x < root.elem && y < root.elem)
                  {
                      return lowestCommonAncestor(root.left,x,y);
                  }
@@ -21,6 +17,7 @@ public class Task1 {
                  {
                      return lowestCommonAncestor(root.right,x,y);
                  }
+
                  return root.elem;
 
     }
